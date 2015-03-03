@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">So-So</string>
+    <string name="username">Enter Username</string>
+    <string name="password">Enter Password</string>
+    <string name="create_account">Create an Account</string>
+    <string name="login">Login</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
