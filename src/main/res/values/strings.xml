@@ -11,7 +11,7 @@
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="phone_number">Phone Number</string>
-    <string name="title_activity_welcome_page">WelcomePage</string>
+    <string name="title_activity_welcome_page">Welcome Page</string>
     <string name="welcome_message">To get started, lets setup your Default Settings! </string>
     <string name="title_activity_contacts">Contacts</string>
     <string name="hello_world">Hello world!</string>
