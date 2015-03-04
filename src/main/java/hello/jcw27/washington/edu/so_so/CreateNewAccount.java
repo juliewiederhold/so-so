@@ -10,22 +10,22 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 
-public class LoginScreen extends Activity {
+public class CreateNewAccount extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_screen);
+        setContentView(R.layout.activity_create_new_account);
 
-        ImageView image = (ImageView) findViewById(R.id.logo);
-        image.setImageResource(R.drawable.logososo);
+        ImageView image = (ImageView) findViewById(R.id.image_icon);
+        image.setImageResource(R.drawable.picholdericon);
 
-        Button createAccount = (Button) findViewById(R.id.create_account);
+        Button officialCreateAccount = (Button) findViewById(R.id.official_create_account);
 
-        createAccount.setOnClickListener(new View.OnClickListener() {
+        officialCreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent create_account = new Intent(LoginScreen.this, CreateNewAccount.class);
+                Intent create_account = new Intent(CreateNewAccount.this, WelcomePage.class);
                 startActivity(create_account);
             }
         });
@@ -35,7 +35,7 @@ public class LoginScreen extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login_screen, menu);
+        getMenuInflater().inflate(R.menu.menu_create_new_account, menu);
         return true;
     }
 

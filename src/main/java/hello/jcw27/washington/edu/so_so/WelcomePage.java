@@ -7,25 +7,21 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 
-public class LoginScreen extends Activity {
+public class WelcomePage extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_screen);
+        setContentView(R.layout.activity_welcome_page);
 
-        ImageView image = (ImageView) findViewById(R.id.logo);
-        image.setImageResource(R.drawable.logososo);
+        Button beginDefaultSettingsSetup = (Button) findViewById(R.id.begin_default_settings_setup);
 
-        Button createAccount = (Button) findViewById(R.id.create_account);
-
-        createAccount.setOnClickListener(new View.OnClickListener() {
+        beginDefaultSettingsSetup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent create_account = new Intent(LoginScreen.this, CreateNewAccount.class);
+                Intent create_account = new Intent(WelcomePage.this, Contacts.class);
                 startActivity(create_account);
             }
         });
@@ -35,7 +31,7 @@ public class LoginScreen extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login_screen, menu);
+        getMenuInflater().inflate(R.menu.menu_welcome_page, menu);
         return true;
     }
 

@@ -1,41 +1,24 @@
 package hello.jcw27.washington.edu.so_so;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 
 
-public class LoginScreen extends Activity {
+public class Contacts extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_screen);
-
-        ImageView image = (ImageView) findViewById(R.id.logo);
-        image.setImageResource(R.drawable.logososo);
-
-        Button createAccount = (Button) findViewById(R.id.create_account);
-
-        createAccount.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent create_account = new Intent(LoginScreen.this, CreateNewAccount.class);
-                startActivity(create_account);
-            }
-        });
+        setContentView(R.layout.activity_contacts);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login_screen, menu);
+        getMenuInflater().inflate(R.menu.menu_contacts, menu);
         return true;
     }
 
